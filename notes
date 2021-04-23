@@ -1,0 +1,16 @@
+Task Project 
+
+--what do we want the app to do. 
+
+User --
+--User can enter their information and see their tasks and only their tasks, should not be able to see other users 
+--They can create, read, edit, update, delete a task that IS THEIRS 
+--They can create a new to do/ task list 
+
+
+Task --
+
+--Can be created, edited, updated and deleted
+--has a check box that can signify wether it has been complete or not
+--once complete moves to the Users completed list
+--if unchecked from the completed list it moves back to the todo/task list 
