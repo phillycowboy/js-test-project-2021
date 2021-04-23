@@ -5,6 +5,15 @@ class TasksController < ApplicationController
         render json: tasks 
     end
 
+    def create 
+        task = Task.new(task_params)
+        if task.save 
+            render json: task 
+        else 
+            render json: {message: "Could not create task"}
+        end 
+    end
+
     def show 
         task = Task.find_by(id: params[:id])
         if task 
@@ -12,5 +21,11 @@ class TasksController < ApplicationController
         else 
             render json: {message: "Task does not exist"}
         end
+    end
+
+    private 
+
+    def task_params 
+        parmas.require(:task).permit(:activity, :user_id)
     end
 end
