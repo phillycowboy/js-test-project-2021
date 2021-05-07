@@ -4,7 +4,7 @@ Task Project
 
 User --
 --User can enter their information and see their tasks and only their tasks, should not be able to see other users 
---They can create, read, edit, update, delete a task that IS THEIRS 
+--They can create, edit/update, delete a task that IS THEIRS 
 --They can create a new to do/ task list 
 
 
@@ -14,3 +14,21 @@ Task --
 --has a check box that can signify wether it has been complete or not
 --once complete moves to the Users completed list
 --if unchecked from the completed list it moves back to the todo/task list 
+
+greeted with a sign in form-> submit hide sign in form
+
+then 
+
+to do task form -> on submit appends to a larger div/todo list 
+
+then 
+
+task are instantiated with a edit, delete, and completed buton 
+
+if edit - repopulate the form with the former task and update and submit 
+
+if delete - have it taken off the DOM 
+
+if completed - line trhrough styling
+
+once all tasks are completed have the option to start over or be taken to the home page. 
