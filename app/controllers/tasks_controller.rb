@@ -28,11 +28,21 @@ class TasksController < ApplicationController
     end
 
     def update
-    
+        task = Task.find_by(id: params[:id])
+        if task && task.update(task_params)
+            render json: {task: task}
+        else 
+            render json: {error: task.errors}
+        end
     end
 
     def destroy 
-
+        task = Task.find_by(id: params[:id])
+        if task
+            task.destroy
+        else 
+            render json: {error: "Task could not be deleted."}
+        end
     end
 
     private 
