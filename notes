@@ -15,24 +15,25 @@ Task --
 --once complete moves to the Users completed list
 --if unchecked from the completed list it moves back to the todo/task list 
 
-greeted with a sign in form-> submit hide sign in form
+greeted with a sign in form-> submit hide sign in form[X]
 
 then 
 
-to do task form -> on submit appends to a larger div/todo list 
+to do task form -> on submit appends to a larger div/todo list[] 
 
 then 
 
-task are instantiated with a edit, delete, and completed buton 
+task are instantiated with a edit, delete, and completed buton []
 
-if edit - repopulate the form with the former task and update and submit 
+if edit - repopulate the form with the former task and update and submit []
 
-if delete - have it taken off the DOM 
+if delete - have it taken off the DOM[] 
 
-if completed - line trhrough styling
+if completed - line trhrough styling[]
 
-once all tasks are completed have the option to start over or be taken to the home page. 
+once all tasks are completed have the option to start over or be taken to the home page.[] 
 
-has to be OOP classes 
 
-have list recoginize user by email. 
+has to be OOP classes [] 
+
+have list recoginize user by email. [] 
