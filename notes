@@ -19,7 +19,8 @@ greeted with a sign in form-> submit hide sign in form[X]
 
 then 
 
-to do task form -> on submit appends to a larger div/todo list[] POST FETCH
+to do task form -> on submit appends to a larger div/todo list[] POST FETCH  - missing param? returns message
+
 
 then 
 
