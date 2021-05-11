@@ -24,7 +24,7 @@ class TasksController < ApplicationController
     end
 
     def edit 
-    
+    # your edit action is your frontend
     end
 
     def update
