@@ -1,5 +1,7 @@
 class TasksController < ApplicationController
 
+    before_action :find_task, only: [:show, :update, :destroy]
+
     def index 
         tasks = Task.all 
         render json: tasks 
@@ -38,8 +40,10 @@ class TasksController < ApplicationController
 
     def destroy 
         task = Task.find_by(id: params[:id])
+        binding.pry
         if task
             task.destroy
+            render json: {task: task}
         else 
             render json: {error: "Task could not be deleted."}
         end
@@ -49,5 +53,9 @@ class TasksController < ApplicationController
 
     def task_params 
         params.require(:task).permit(:activity, :user_id)
+    end
+
+    def find_task 
+        task = Task.find_by(id: params[:id])
     end
 end
