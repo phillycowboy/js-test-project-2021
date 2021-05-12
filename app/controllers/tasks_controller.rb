@@ -31,6 +31,7 @@ class TasksController < ApplicationController
 
     def update
         task = Task.find_by(id: params[:id])
+        binding.pry
         if task && task.update(task_params)
             render json: {task: task}
         else 
@@ -40,7 +41,7 @@ class TasksController < ApplicationController
 
     def destroy 
         task = Task.find_by(id: params[:id])
-        binding.pry
+        # binding.pry
         if task
             task.destroy
             render json: {task: task}
