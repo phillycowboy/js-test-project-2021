@@ -19,16 +19,17 @@ greeted with a sign in form-> submit hide sign in form[X]
 
 then 
 
-to do task form -> on submit appends to a larger div/todo list[] POST FETCH but atttach to user that is signed in 
+to do task form -> on submit appends to a larger div/todo list[X] POST FETCH but atttach to user that is signed in 
 
 
 then 
 
-task are instantiated with a edit, delete, and completed buton []
+task are instantiated with a edit, delete, and completed buton [X]
 
 if edit - repopulate the form with the former task and update and submit [] PATCH FETCH 
 
 if delete - have it taken off the DOM[] DELETE FETCH 
+--its only deleteing the first one not a specific one
 
 if completed - line trhrough styling[]
 
