@@ -27,9 +27,10 @@ then
 task are instantiated with a edit, delete, and completed buton [X]
 
 if edit - repopulate the form with the former task and update and submit [] PATCH FETCH 
+    
 
-if delete - have it taken off the DOM[] DELETE FETCH 
---its only deleteing the first one not a specific one
+if delete - have it taken off the DOM[X] DELETE FETCH 
+--deletes by object id and its parent node 
 
 if completed - line trhrough styling[]
 
@@ -37,5 +38,3 @@ once all tasks are completed have the option to start over or be taken to the ho
 
 
 has to be OOP classes [] 
-
-have list recoginize user by email. [] 
