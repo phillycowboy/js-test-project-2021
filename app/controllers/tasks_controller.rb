@@ -35,7 +35,7 @@ class TasksController < ApplicationController
         if task && task.update(task_params)
             render json: {task: task}
         else 
-            render json: {error: task.errors}
+            render json: {error: "Task could not be updated"}
         end
     end
 

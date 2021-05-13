@@ -7,8 +7,8 @@ class UsersController < ApplicationController
 
     def create 
         # binding.pry
-        user = User.new(user_params)
-        if user.save
+        user = User.find_or_create_by(user_params)
+        if user.valid?
             render json: user 
         else 
             render json: {message: "Could not create User."}
