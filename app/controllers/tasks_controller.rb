@@ -33,7 +33,7 @@ class TasksController < ApplicationController
         task = Task.find_by(id: params[:id])
         binding.pry
         if task && task.update(task_params)
-            render json: {task: task}
+            render json: task
         else 
             render json: {error: "Task could not be updated"}
         end
@@ -43,7 +43,7 @@ class TasksController < ApplicationController
         task = Task.find_by(id: params[:id])
         if task
             task.destroy
-            render json: {task: task}
+            render json: task
         else 
             render json: {error: "Task could not be deleted."}
         end
