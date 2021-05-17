@@ -14,7 +14,33 @@ Task --
 --has a check box that can signify wether it has been complete or not
 --once complete moves to the Users completed list
 --if unchecked from the completed list it moves back to the todo/task list 
+has to be OOP classes [] 
 
+
+
+TO DOOOOOO _________________________________________________________________________________________________________________________
+
+-- make a new app2.js file(move variables for forms divs that make the requests)
+--get fetch requests to work that way
+--have eventlisteners call functions that call the class 
+--then worry about style. 
+
+
+
+if completed - line trhrough styling[]
+
+once all tasks are completed have the option to start over or be taken to the home page.[] 
+
+
+
+
+
+
+
+
+
+
+DONE ___________________________________________________________________________________________________________________________________
 greeted with a sign in form-> submit hide sign in form[X]
 
 then 
@@ -26,15 +52,11 @@ then
 
 task are instantiated with a edit, delete, and completed buton [X]
 
-if edit - repopulate the form with the former task and update and submit [] PATCH FETCH 
+if edit - repopulate the form with the former task and update and submit [X] PATCH FETCH 
     
 
 if delete - have it taken off the DOM[X] DELETE FETCH 
 --deletes by object id and its parent node 
 
-if completed - line trhrough styling[]
-
-once all tasks are completed have the option to start over or be taken to the home page.[] 
 
 
-has to be OOP classes [] 
