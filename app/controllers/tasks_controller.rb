@@ -9,6 +9,7 @@ class TasksController < ApplicationController
 
     def create 
         task = Task.new(task_params)
+        binding.pry
         if task.save 
             render json: task 
         else 

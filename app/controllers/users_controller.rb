@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     end
 
     def create 
-        binding.pry
+        # binding.pry
         user = User.find_or_create_by(user_params)
         if user.valid?
             render json: user 
