@@ -42,6 +42,7 @@ class TasksController < ApplicationController
 
     def destroy 
         task = Task.find_by(id: params[:id])
+        # binding.pry 
         if task
             task.destroy
             render json: task

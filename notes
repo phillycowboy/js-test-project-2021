@@ -20,7 +20,10 @@ has to be OOP classes []
 
 TO DOOOOOO _________________________________________________________________________________________________________________________
 
--- make a new app2.js file(move variables for forms divs that make the requests)
+-- make a new app2.js file(move variables for forms divs that make the requests)[X]
+--PATCH[] 
+--DELETE[] 
+
 --get fetch requests to work that way
 --have eventlisteners call functions that call the class 
 --then worry about style. 
