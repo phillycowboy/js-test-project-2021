@@ -22,7 +22,7 @@ TO DOOOOOO _____________________________________________________________________
 
 -- make a new app2.js file(move variables for forms divs that make the requests)[X]
 --PATCH[] 
---DELETE[] 
+--DELETE[X] 
 
 --get fetch requests to work that way
 --have eventlisteners call functions that call the class 
