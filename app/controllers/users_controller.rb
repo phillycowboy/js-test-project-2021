@@ -8,8 +8,9 @@ class UsersController < ApplicationController
     def create 
         # binding.pry
         user = User.find_or_create_by(user_params)
+        # binding.pry
         if user.valid?
-            render json: user 
+            render json: user, include: [:tasks]
         else 
             render json: {message: "Could not create User."}
         end 
